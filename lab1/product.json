@@ -10,5 +10,17 @@
     "name": "fghj",
     "price": 76,
     "qty": 8
+  },
+  {
+    "id": null,
+    "name": "a",
+    "price": null,
+    "qty": 12
+  },
+  {
+    "id": null,
+    "name": "jj",
+    "price": null,
+    "qty": null
   }
 ]
