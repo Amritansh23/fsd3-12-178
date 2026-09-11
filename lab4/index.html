@@ -1,0 +1,168 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Enquiry - Contact Us</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f2f5f9;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 500px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Contact Us</h1>
+
+        <p class="description">
+            Have a question about our products? Send us an enquiry.
+        </p>
+
+        <form action="/submit-enquiry" method="POST">
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+            >
+
+            <label for="product">Select Product</label>
+            <select id="product" name="product" required>
+                <option value="">-- Select Product --</option>
+                <option value="laptop">Laptop</option>
+                <option value="mobile">Mobile Phone</option>
+                <option value="headphones">Headphones</option>
+                <option value="smartwatch">Smart Watch</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Product Enquiry</label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Write your enquiry here..."
+                required
+            ></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+
+        </form>
+
+        <div class="contact-info">
+            <p>📧 Email: support@example.com</p>
+            <p>📞 Phone: +91 98765 43210</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

@@ -30,3 +30,12 @@ one of the most important module in Node.js, originally designed for building sc
 - 201 -> Unauthorized
 - 404 -> Not found
 - 500 -> Internal Server error
+
+server can send to client
+1. html cotent->prg1, prg2, prg3
+2. html fie
+3. json data
+4. plain file
+5. js file
+6. any file to downlode
+7. etc
